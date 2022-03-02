@@ -9,6 +9,9 @@ class Employee{
     int a, b, c;
     string name;
 
+    // The protected access specifier hides its member variables 
+    // and functions from other classes and objects
+    
     // In public: members can be accessed from outside the class
     public:
     int d, e;
