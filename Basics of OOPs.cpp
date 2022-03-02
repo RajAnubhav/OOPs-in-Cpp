@@ -9,8 +9,10 @@ class Employee{
     int a, b, c;
     string name;
 
-    // The protected access specifier hides its member variables 
-    // and functions from other classes and objects
+    // Protected: Protected access modifier is similar to private access modifier in the sense 
+    // that it can’t be accessed outside of it’s class unless with the help of friend class, 
+    // the difference is that the class members declared as Protected can be accessed by 
+    // any subclass(derived class) of that class as well. 
     
     // In public: members can be accessed from outside the class
     public:
