@@ -1,4 +1,12 @@
 // friend function
+
+/*
+A friend function is a function that is not a member of a 
+class but has access to the class's private and protected members. 
+Friend functions are not considered class members; they are normal 
+external functions that are given special access privileges
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -13,9 +21,11 @@ public:
         b = n2;
     }
 
-    // Below line means that non-member sumComplex function is allowed to do with the private member
+    // Below line means that non-member sumComplex function is allowed 
+    // to do with the private member
     friend complex sumComplex(complex o1, complex o2); // this is the friend function 
     
+    // friend functions can be invoked without the objects
     void printNumber()
     {
         cout << "Your number is " << a << " + " << b << "i" << endl;
@@ -41,6 +51,14 @@ int main()
 
     return 0;
 }
+
+// <<<<<<<<<------------------   output   ----------------->>>>>>>>>>>>>
+/*
+Your number is 1 + 4i
+Your number is 5 + 8i
+Your number is 6 + 12i
+*/
+
 
 /* Properties of friend functions
 1. Not in the scope of the class
