@@ -15,3 +15,5 @@ Problems with the Structures:
 
 Structures are not safe as data hiding is not possible
 We cannot put functions in the structures
+
+<button onClick="alert('Hello World')">Click Me</button>
